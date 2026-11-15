@@ -32,10 +32,11 @@ including only valid partitions. A garbage Gram matrix means any positive semide
 
 **Output harmonic bound.** If $`N\ge64`$, $`M\ge N^4`$, and $`1\le K\le N/32`$, then every garbage Gram matrix satisfies
 
+**Equation (1).**
+
 ```math
 \mathrm{Tr}\!\left[\Pi_K\frac{H\circ T}{L}\right]
 \le \frac NM+\frac{3K+2}{N}+4N^{-4}.
-\tag{1}
 ```
 
 Here $`\circ`$ is the entrywise product. In particular, the bound does not assume that the garbage is fixed, known, classical, or independent of $`f`$.
@@ -52,9 +53,10 @@ Q_{f,g}
 
 Consequently,
 
+**Equation (2).**
+
 ```math
 H=\frac NM J+\left(1-\frac NM\right)Q,
-\tag{2}
 ```
 
 where $`J`$ is the all-ones Gram matrix. The feature vectors for $`Q`$ lie in the standard representation of $`S_M`$, and the domain group $`S_N`$ acts trivially on them. Multiplicity-freeness therefore identifies
@@ -65,9 +67,10 @@ Q=T_{(N),(M-1,1)}.
 
 The explicit formula gives an especially useful pointwise inequality:
 
+**Equation (3).**
+
 ```math
 Q_{f,g}\le \frac{B(f,g)}N\le1.
-\tag{3}
 ```
 
 The first inequality is equivalent to $`B(f,g)\le N`$. Negative entries of $`Q`$ are permitted; $`Q`$ itself is a positive semidefinite Gram matrix.
@@ -92,6 +95,8 @@ This domain-label argument is the content of the reduction used in [LR22, arXiv 
 
 Fix $`\lambda=(N-\ell,\nu)`$ with $`\ell\le K`$ and an admissible $`\mu\ne\bar\lambda`$. Symmetry of the entrywise-product trace gives
 
+**Equation (4).**
+
 ```math
 \begin{aligned}
 &\mathrm{Tr}\!\left[
@@ -104,7 +109,6 @@ E_{\lambda,\mu}
 \frac{T_{\lambda,\bar\lambda}\circ Q}{L}\right]
 \le\frac{d_{\bar\lambda}}{d_\mu}.
 \end{aligned}
-\tag{4}
 ```
 
 The last trace lies in $`[0,1]`$: the Schur product divided by $`L`$ is a density matrix. The common domain dimension $`d_\lambda`$ cancels in the ratio.
@@ -113,13 +117,14 @@ We now bound that ratio uniformly. Horizontal-strip interlacing gives $`\mu_{i+1
 
 For $`\alpha=(M-q,\theta)`$, $`|\theta|=q`$, the hook formula separates into
 
+**Equation (5).**
+
 ```math
 d_\alpha=\binom Mq\frac{d_\theta}{P_\alpha},
 \qquad
 P_\alpha=
 \prod_{c=1}^{\theta_1}
 \left(1+\frac{\theta'_c}{M-q-c+1}\right).
-\tag{5}
 ```
 
 All hooks below the first row are exactly those of $`\theta`$. This proves (5) directly. The hook formula and Young branching are also recorded in [LR22, arXiv v3, Theorems 4.1–4.2](https://arxiv.org/pdf/1902.07336v3).
@@ -143,9 +148,10 @@ The last two inequalities already hold for $`M\ge8N`$. Hence
 
 A nonminimal $`\mu`$ requires at least one move, and every move has ratio greater than one. We obtain
 
+**Equation (6).**
+
 ```math
 \frac{d_{\bar\lambda}}{d_\mu}\le\frac{2N}{M}.
-\tag{6}
 ```
 
 This finite bound replaces a fixed-rank asymptotic estimate.
@@ -160,48 +166,53 @@ Now let $`E=E_{\lambda,\bar\lambda}`$ and $`d=\mathrm{rank}E`$. Transitivity mak
 
 The elementary projector identities imply
 
+**Equation (7).**
+
 ```math
 |\omega(f,g)|\le1,
 \qquad
 \frac dL\sum_g|\omega(f,g)|^2=1.
-\tag{7}
 ```
 
 The first follows from positive semidefiniteness of $`E`$; the second is the diagonal entry of $`E^2=E`$. These are the spherical-function bounds recorded in [LR22, arXiv v3, Propositions 4.7–4.8](https://arxiv.org/pdf/1902.07336v3), here obtained from the projector normalization.
 
 Fix the identity injection $`f_0(x)=x`$. Expanding the trace and using invariance gives the exact expression
 
+**Equation (8).**
+
 ```math
 \mathrm{Tr}\!\left[E\frac{T_{\lambda,\bar\lambda}\circ Q}{L}\right]
 =\frac dL\sum_{g\in\mathcal F}
 |\omega(f_0,g)|^2 Q_{f_0,g}.
-\tag{8}
 ```
 
 Let $`B_g=|\mathrm{im}g\cap[N]|`$. For any integer $`1\le t\le N`$, split the sum at $`B_g=t`$. On the first part, (3) bounds $`Q`$ by $`t/N`$, and the weights in (7) sum to one. On the second, use $`Q\le1`$ and $`|\omega|\le1`$. Thus
 
+**Equation (9).**
+
 ```math
 \mathrm{Tr}\!\left[E\frac{T_{\lambda,\bar\lambda}\circ Q}{L}\right]
 \le\frac tN+d\,\Pr(B_g\ge t),
-\tag{9}
 ```
 
 where $`g`$ is uniform over injections. This does not require identifying cycle-path strata or taking an ordered limit.
 
 The image of $`g`$ is a uniform $`N`$-subset of $`[M]`$. A union bound over fixed $`t`$-subsets of $`[N]`$ yields
 
+**Equation (10).**
+
 ```math
 \Pr(B_g\ge t)
 \le\binom Nt\frac{(N)_t}{(M)_t}
 \le\left(\frac{N^2}{M-N}\right)^t.
-\tag{10}
 ```
 
 For the dimension, the standard-tableau count gives $`d_\lambda\le\binom N\ell d_\nu`$ and $`d_{\bar\lambda}\le\binom M\ell d_\nu`$. Since $`d_\nu^2\le\ell!`$, their product satisfies
 
+**Equation (11).**
+
 ```math
 d=d_\lambda d_{\bar\lambda}\le(MN)^\ell.
-\tag{11}
 ```
 
 The inequality $`d_\nu^2\le\ell!`$ follows by decomposing the regular representation of $`S_\ell`$; (11) is also the dimension bound in [LR22, arXiv v3, Proposition 4.3](https://arxiv.org/pdf/1902.07336v3).

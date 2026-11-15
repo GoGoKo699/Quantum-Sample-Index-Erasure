@@ -82,12 +82,13 @@ Introduce a mathematical register whose orthonormal labels are the injections th
 
 The processor is not given this register or a coherent superposition of different instances. Their overlap obeys
 
+**Equation (1).**
+
 ```math
 \langle\Xi|Z\rangle
 =\frac1L\sum_f\sqrt{p_f}
 \ge\frac1L\sum_fp_f
 =\overline F.
-\tag{1}
 ```
 
 Taking the partial trace over the physical registers gives, respectively,
@@ -102,11 +103,12 @@ H(f,g)=\langle s_f|s_g\rangle.
 
 Here $`\mathsf T`$ denotes matrix transpose, not the auxiliary Gram matrix. With half trace distance $`D(\rho,\sigma)=\tfrac12\Vert\rho-\sigma\Vert_1`$, pure-state trace distance and contractivity imply
 
+**Equation (2).**
+
 ```math
 D(\sigma,\tau)
 \le\sqrt{1-|\langle\Xi|Z\rangle|^2}
 \le\sqrt{1-\overline F^2}.
-\tag{2}
 ```
 
 Thus high output fidelity would force the unchanged source Gram state to be close to a target-times-garbage Gram state. This conclusion includes arbitrary final garbage, rather than assuming a clean return.
@@ -117,14 +119,17 @@ Suppose, for contradiction, that $`1\le k\le N/32`$. Let $`\Pi_k`$ be the equal-
 
 The source lemma gives
 
+**Equation (3).**
+
 ```math
 \mathrm{Tr}(\Pi_k\sigma)
 \ge1-\frac{k}{N-k+1}
 >\frac{30}{31}.
-\tag{3}
 ```
 
 The output lemma applies to the arbitrary Gram matrix $`T`$ and gives
+
+**Equation (4).**
 
 ```math
 \begin{aligned}
@@ -133,7 +138,6 @@ The output lemma applies to the arbitrary Gram matrix $`T`$ and gives
 &\le N^{-3}+\frac3{32}+\frac2N+4N^{-4}
 <0.126.
 \end{aligned}
-\tag{4}
 ```
 
 All inequalities hold uniformly for the stated finite regime $`N\ge64`$, $`M\ge N^4`$. The probability difference in this one projective measurement is consequently greater than $`0.841`$. By the variational characterization of half trace distance,
