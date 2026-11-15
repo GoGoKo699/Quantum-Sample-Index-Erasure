@@ -13,7 +13,7 @@ An executable oracle can instead query and uncompute on chosen coherent inputs. 
 Tracing out the index gives
 
 ```math
-\operatorname{Tr}_X|a_f\rangle\langle a_f|
+\mathrm{Tr}_X|a_f\rangle\langle a_f|
 =\frac1N\sum_x|f(x)\rangle\langle f(x)|.
 ```
 

@@ -50,6 +50,10 @@ The injection-space representation theory and the oracle theorem are inherited f
 
 The [science overview](science/README.md) connects these pages. The [retrieval guide](llms.txt) maps reader questions to the same authoritative routes.
 
+## Learn the project
+
+The selected educational anchor is Andrew M. Childs’ *Lecture Notes on Quantum Algorithms*, **17 April 2025**. The [learning route](learning/README.md) identifies the relevant sections without requiring the whole notes first. A [source-to-project bridge](learning/bridge.md) connects oracle algorithms to the specimen model and supplies the missing channel and harmonic ideas. The [30-milestone map](learning/milestones.md) builds from individual states and operations to the full proof and its boundaries.
+
 ## Reproduce the finite checks
 
 Use Python 3.10 or later; the suite needs only its standard library.

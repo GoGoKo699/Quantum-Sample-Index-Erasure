@@ -29,7 +29,7 @@ For output $`\rho_f`$, define target fidelity and half trace distance by
 ```math
 F_f=\langle s_f|\rho_f|s_f\rangle,
 \qquad
-D_f=\frac12\|\rho_f-|s_f\rangle\langle s_f|\|_1.
+D_f=\frac12\Vert\rho_f-|s_f\rangle\langle s_f|\Vert_1.
 ```
 
 Thus fidelity means the population of the pure target, not its square root. A uniform half-trace guarantee $`D_f\le\varepsilon`$ implies $`F_f\ge1-\varepsilon`$, by measuring the target projector. The lower bound below is stronger than a uniform-input assertion: it applies to mean fidelity for a uniformly random injection.

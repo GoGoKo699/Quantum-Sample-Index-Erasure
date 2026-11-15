@@ -34,7 +34,7 @@ Try at most $`k`$ independent copies and stop on the first success. If all attem
 Therefore
 
 ```math
-\frac12\|\rho_f-|s_f\rangle\langle s_f|\|_1
+\frac12\Vert\rho_f-|s_f\rangle\langle s_f|\Vert_1
 \le q_k\le e^{-k/N}.
 ```
 

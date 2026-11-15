@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 5,
+      "source_sha256": "ad79a7c72a06f8c03dc7f17d7cf76c3ba02cc56d709f8530833dde9a181d7e58",
+      "required_text": [
+        "M",
+        "≥",
+        "N",
+        "4"
+      ]
+    },
+    {
+      "path": "README.md",
+      "index": 11,
+      "source_sha256": "c5c9a6218a8520046bf5e72907dde4f9f1bfe64bb12d08bc2c44cc5a536cb7ce",
+      "required_text": [
+        "Θ",
+        "N"
+      ]
+    },
+    {
+      "path": "README.md",
+      "index": 13,
+      "source_sha256": "33537ab533b6d1f4d0f77d65c987f595df36d0d061e09f72e2c2c52b1aa65116",
+      "required_text": [
+        "Θ",
+        "N"
+      ]
+    },
+    {
+      "path": "science/copy_lower_bound.md",
+      "index": 15,
+      "source_sha256": "916c663f8c2f7a1c9dc88628310ff04501198b734e23be90ccc9a2b830fb09fd",
+      "required_text": [
+        "k>N/32"
+      ]
+    },
+    {
+      "path": "science/model.md",
+      "index": 14,
+      "source_sha256": "ad79a7c72a06f8c03dc7f17d7cf76c3ba02cc56d709f8530833dde9a181d7e58",
+      "required_text": [
+        "M",
+        "≥",
+        "N",
+        "4"
+      ]
+    }
+  ]
+}

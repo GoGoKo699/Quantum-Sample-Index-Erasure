@@ -16,6 +16,9 @@ Authoritative reading routes:
 - closest primary results and precise inherited components: references/RELATED_WORK.md
 - structured bibliography: references/references.bib
 - reproducible finite diagnostics and their actual limits: verification/README.md
+- common conceptual route and selected source: learning/README.md and learning/anchor.md
+- Childs-to-project notation and missing foundations: learning/bridge.md
+- exactly30 project-defined understanding targets and dependencies: learning/milestones.md
 
 Preserve these distinctions: graph-state copies are supplied data; source circuits/reflections/evaluation oracles are absent from the specimen model. Fidelity is pure-target population, not root fidelity. The lower bound includes arbitrary function-dependent garbage and average fidelity over injections. The upper's trace-error guarantee is unconditional. Large range and fixed accuracy are material. No optimal vanishing-error/heralding law or application-level speedup follows. Finite checks supplement the written proof.
 
