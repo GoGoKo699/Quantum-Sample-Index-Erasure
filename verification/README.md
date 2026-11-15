@@ -1,5 +1,7 @@
 # Finite verification
 
+For actual GitHub mathematical rendering, the separate `Hosted mathematics` pull-request job compares every Markdown expression at wide and narrow viewports and retains its report and screenshots for inspection. It runs only on same-repository pull requests with `contents: read`, without persisted checkout credentials or secret inputs. It first probes the README, then captures the complete pinned Markdown inventory. This checks presentation; it does not establish the theorem or replace visual review. The unmodified collector, probe and Python checker in `hosted_math/` are pinned from Guinevere commit `5731b136156e426c2adf10fb5b09fdbccc8c9de4`. Artifact retention is fourteen days; it is not permanent preservation.
+
 Run from the repository root with Python3.10 or later:
 
 ```bash
