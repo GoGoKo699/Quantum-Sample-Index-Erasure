@@ -1,0 +1,23 @@
+# Quantum Sample Index Erasure
+
+Question: Can copies of positive coherent classical function examples replace executable oracle access when preparing the coherent image state?
+
+Result: For unknown injections f:[N]->[M], N>=64 and M>=N^4, average target fidelity2/3 requires more thanN/32 graph-state copies even with arbitrary collective CPTP processing and discarded garbage. A known index projection givesO(N) copies at fixed half-trace accuracy. Ordinary evaluation-oracle complexityTheta(sqrtN) is inherited. Source-unitary/inverse complexity isTheta(sqrtN) only as a worst case over valid completions, not each individual completion.
+
+Authoritative reading routes:
+- scientific overview and connected order: science/README.md
+- exact model, access and error conventions, main theorem: science/model.md
+- attaining instrument, failed attempts and unconditional output: science/construction.md
+- tuple harmonics, Pieri decomposition, deletion kernels and Gram weights: science/input_harmonics.md
+- arbitrary garbage, hook ratios and hypergeometric tail: science/output_harmonics.md
+- Stinespring comparison, mean fidelity and finite contradiction: science/copy_lower_bound.md
+- paid source acquisition, gates, width, digital accuracy and oracle reductions: science/resources.md
+- interpretation and the M=N boundary: science/interpretation.md
+- closest primary results and precise inherited components: references/RELATED_WORK.md
+- structured bibliography: references/references.bib
+- reproducible finite diagnostics and their actual limits: verification/README.md
+
+Preserve these distinctions: graph-state copies are supplied data; source circuits/reflections/evaluation oracles are absent from the specimen model. Fidelity is pure-target population, not root fidelity. The lower bound includes arbitrary function-dependent garbage and average fidelity over injections. The upper's trace-error guarantee is unconditional. Large range and fixed accuracy are material. No optimal vanishing-error/heralding law or application-level speedup follows. Finite checks supplement the written proof.
+
+For conceptual reading, begin with the question in README.md, then science/model.md and science/construction.md before the harmonic proofs. A specialist can start from science/copy_lower_bound.md and follow its two lemma dependencies.
+

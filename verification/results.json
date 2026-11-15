@@ -1,0 +1,453 @@
+{
+  "arithmetic": "Python stdlib integers and Fraction; modular ranks explicitly labelled",
+  "constant_gap": [
+    {
+      "M": 16777216,
+      "N": 64,
+      "average_fidelity_allowance_squared": "5/9",
+      "gap": "222821329/264241152",
+      "gap_float": 0.8432499151381235,
+      "ideal_output_upper": "524305/4194304",
+      "k": 2,
+      "positive_gap_squared_exceeds_allowance": true,
+      "source_lower": "61/63"
+    },
+    {
+      "M": 17850625,
+      "N": 65,
+      "average_fidelity_allowance_squared": "5/9",
+      "gap": "483063167/571220000",
+      "gap_float": 0.845669211512202,
+      "ideal_output_upper": "2197069/17850625",
+      "k": 2,
+      "positive_gap_squared_exceeds_allowance": true,
+      "source_lower": "31/32"
+    },
+    {
+      "M": 84934656,
+      "N": 96,
+      "average_fidelity_allowance_squared": "5/9",
+      "gap": "851778409/997982208",
+      "gap_float": 0.8535005956739461,
+      "ideal_output_upper": "2433049/21233664",
+      "k": 3,
+      "positive_gap_squared_exceeds_allowance": true,
+      "source_lower": "91/94"
+    },
+    {
+      "M": 268435456,
+      "N": 128,
+      "average_fidelity_allowance_squared": "5/9",
+      "gap": "7202664419/8388608000",
+      "gap_float": 0.8586245082616806,
+      "ideal_output_upper": "7340065/67108864",
+      "k": 4,
+      "positive_gap_squared_exceeds_allowance": true,
+      "source_lower": "121/125"
+    },
+    {
+      "M": 4294967296,
+      "N": 256,
+      "average_fidelity_allowance_squared": "5/9",
+      "gap": "231617839303/267361714176",
+      "gap_float": 0.8663089254078078,
+      "ideal_output_upper": "109051969/1073741824",
+      "k": 8,
+      "positive_gap_squared_exceeds_allowance": true,
+      "source_lower": "241/249"
+    },
+    {
+      "M": 1099511627776,
+      "N": 1024,
+      "average_fidelity_allowance_squared": "5/9",
+      "gap": "238035140352799/272953761595392",
+      "gap_float": 0.8720712950116658,
+      "ideal_output_upper": "26306674945/274877906944",
+      "k": 32,
+      "positive_gap_squared_exceeds_allowance": true,
+      "source_lower": "961/993"
+    },
+    {
+      "M": 281474976710656,
+      "N": 4096,
+      "average_fidelity_allowance_squared": "5/9",
+      "gap": "243966202676898943/279293545641148416",
+      "gap_float": 0.8735117817235921,
+      "ideal_output_upper": "6631429506049/70368744177664",
+      "k": 128,
+      "positive_gap_squared_exceeds_allowance": true,
+      "source_lower": "3841/3969"
+    }
+  ],
+  "hook_dimensions": {
+    "minimum_ratio_to_claimed_lower_bound": "140735902912353/70368219889664",
+    "scoped_direct_cancelled_hook_comparisons": 432,
+    "scoped_parameters": [
+      {
+        "M": 16777216,
+        "N": 64,
+        "max_tail_size_tested": 63
+      },
+      {
+        "M": 16777217,
+        "N": 64,
+        "max_tail_size_tested": 63
+      },
+      {
+        "M": 33554432,
+        "N": 64,
+        "max_tail_size_tested": 63
+      },
+      {
+        "M": 268435456,
+        "N": 128,
+        "max_tail_size_tested": 127
+      },
+      {
+        "M": 268435457,
+        "N": 128,
+        "max_tail_size_tested": 127
+      },
+      {
+        "M": 536870912,
+        "N": 128,
+        "max_tail_size_tested": 127
+      },
+      {
+        "M": 4294967296,
+        "N": 256,
+        "max_tail_size_tested": 255
+      },
+      {
+        "M": 4294967297,
+        "N": 256,
+        "max_tail_size_tested": 255
+      },
+      {
+        "M": 8589934592,
+        "N": 256,
+        "max_tail_size_tested": 255
+      }
+    ],
+    "small_direct_full_hook_comparisons": 989,
+    "warning": "Representative tails only; not all partitions up to size255."
+  },
+  "hypergeometric": {
+    "scoped_dimension_times_tail_comparisons": 162,
+    "scoped_exact_tail_cases": [
+      {
+        "M": 16777216,
+        "N": 64,
+        "actual_tail_float": 2.887386679277278e-08,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 2.887827749197349e-08,
+        "loose_bound_float": 5.960509952534361e-08,
+        "t": 2
+      },
+      {
+        "M": 16777216,
+        "N": 64,
+        "actual_tail_float": 5.247241332621711e-21,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 5.24814867630652e-21,
+        "loose_bound_float": 8.67378281789983e-19,
+        "t": 5
+      },
+      {
+        "M": 16777216,
+        "N": 64,
+        "actual_tail_float": 1.258186999861696e-34,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 1.2583960670883179e-34,
+        "loose_bound_float": 1.2622159676137306e-29,
+        "t": 8
+      },
+      {
+        "M": 268435456,
+        "N": 128,
+        "actual_tail_float": 1.8335827158041285e-09,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 1.8336550124428421e-09,
+        "loose_bound_float": 3.725293851178134e-09,
+        "t": 2
+      },
+      {
+        "M": 268435456,
+        "N": 128,
+        "actual_tail_float": 6.02602386973457e-24,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 6.02630689814428e-24,
+        "loose_bound_float": 8.470349667411066e-22,
+        "t": 5
+      },
+      {
+        "M": 268435456,
+        "N": 128,
+        "actual_tail_float": 2.613666524472578e-71,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 2.613784629052524e-71,
+        "loose_bound_float": 9.956890913789759e-60,
+        "t": 14
+      },
+      {
+        "M": 4294967296,
+        "N": 256,
+        "actual_tail_float": 1.1550644679897687e-10,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 1.15507603508895e-10,
+        "loose_bound_float": 2.3283067140944773e-10,
+        "t": 2
+      },
+      {
+        "M": 4294967296,
+        "N": 256,
+        "actual_tail_float": 6.3721206277920316e-27,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 6.3721985198045644e-27,
+        "loose_bound_float": 8.271808590721046e-25,
+        "t": 5
+      },
+      {
+        "M": 4294967296,
+        "N": 256,
+        "actual_tail_float": 1.0583863795711255e-153,
+        "comparisons": "exact rational",
+        "factorial_moment_bound_float": 1.0583989327071211e-153,
+        "loose_bound_float": 5.909115472854994e-126,
+        "t": 26
+      }
+    ],
+    "toy_exact_tail_comparisons": 434
+  },
+  "limitations": [
+    "No large-range injection Gram was constructed.",
+    "Finite diagnostics do not prove the asymptotic copy lower bound or priority.",
+    "Full exact characteristic polynomials only for tuple dimensions<=30; larger cases use exact identities/trace moments and two modular ranks.",
+    "Scoped hook tests use representative tails, not an exhaustive partition sweep.",
+    "Fidelity means target overlap <s|rho|s>; trace distance means half the trace norm."
+  ],
+  "occupancy": {
+    "A_range": "0..N",
+    "N_range": [
+      2,
+      12
+    ],
+    "exact_scalar_Gram_identity_cases": 343,
+    "k_range": "1..floor(N/2)"
+  },
+  "projection": {
+    "projection_cases": [
+      {
+        "M": 3,
+        "N": 2,
+        "conditioned_target_fidelity": "1",
+        "deliberately_wrong_one_over_M": "1/3",
+        "injections_enumerated": 6,
+        "matching_union_path_identity_checked": true,
+        "nonuniform_index_fidelity": "9/10",
+        "projection_success": "1/2"
+      },
+      {
+        "M": 5,
+        "N": 3,
+        "conditioned_target_fidelity": "1",
+        "deliberately_wrong_one_over_M": "1/5",
+        "injections_enumerated": 60,
+        "matching_union_path_identity_checked": true,
+        "nonuniform_index_fidelity": "6/7",
+        "projection_success": "1/3"
+      },
+      {
+        "M": 6,
+        "N": 4,
+        "conditioned_target_fidelity": "1",
+        "deliberately_wrong_one_over_M": "1/6",
+        "injections_enumerated": 360,
+        "matching_union_path_identity_checked": true,
+        "nonuniform_index_fidelity": "5/6",
+        "projection_success": "1/4"
+      }
+    ],
+    "zero_copy_average_targets": [
+      {
+        "M": 3,
+        "N": 2,
+        "orthogonal_eigenvalue": "1/6",
+        "uniform_eigenvalue": "2/3"
+      },
+      {
+        "M": 5,
+        "N": 3,
+        "orthogonal_eigenvalue": "1/10",
+        "uniform_eigenvalue": "3/5"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "status": "passed",
+  "tuple_modules": [
+    {
+      "N": 4,
+      "Pieri_dimension_sum": 4,
+      "exact_characteristic_polynomial_checked": true,
+      "exact_deletion_central_identity": true,
+      "exact_trace_moments_checked": 4,
+      "modular_kernel_dimensions": {
+        "1000003": 3,
+        "1000033": 3
+      },
+      "predicted_integer_spectrum": {
+        "0": 3,
+        "4": 1
+      },
+      "r": 1,
+      "rank_bound_fraction": "3/4",
+      "top_kernel_dimension": 3,
+      "top_kernel_fraction": "3/4",
+      "tuple_dimension": 4
+    },
+    {
+      "N": 4,
+      "Pieri_dimension_sum": 12,
+      "exact_characteristic_polynomial_checked": true,
+      "exact_deletion_central_identity": true,
+      "exact_trace_moments_checked": 12,
+      "modular_kernel_dimensions": {
+        "1000003": 5,
+        "1000033": 5
+      },
+      "predicted_integer_spectrum": {
+        "0": 5,
+        "2": 3,
+        "4": 3,
+        "6": 1
+      },
+      "r": 2,
+      "rank_bound_fraction": "1/3",
+      "top_kernel_dimension": 5,
+      "top_kernel_fraction": "5/12",
+      "tuple_dimension": 12
+    },
+    {
+      "N": 5,
+      "Pieri_dimension_sum": 20,
+      "exact_characteristic_polynomial_checked": true,
+      "exact_deletion_central_identity": true,
+      "exact_trace_moments_checked": 20,
+      "modular_kernel_dimensions": {
+        "1000003": 11,
+        "1000033": 11
+      },
+      "predicted_integer_spectrum": {
+        "0": 11,
+        "3": 4,
+        "5": 4,
+        "8": 1
+      },
+      "r": 2,
+      "rank_bound_fraction": "1/2",
+      "top_kernel_dimension": 11,
+      "top_kernel_fraction": "11/20",
+      "tuple_dimension": 20
+    },
+    {
+      "N": 6,
+      "Pieri_dimension_sum": 30,
+      "exact_characteristic_polynomial_checked": true,
+      "exact_deletion_central_identity": true,
+      "exact_trace_moments_checked": 30,
+      "modular_kernel_dimensions": {
+        "1000003": 19,
+        "1000033": 19
+      },
+      "predicted_integer_spectrum": {
+        "0": 19,
+        "10": 1,
+        "4": 5,
+        "6": 5
+      },
+      "r": 2,
+      "rank_bound_fraction": "3/5",
+      "top_kernel_dimension": 19,
+      "top_kernel_fraction": "19/30",
+      "tuple_dimension": 30
+    },
+    {
+      "N": 6,
+      "Pieri_dimension_sum": 120,
+      "exact_characteristic_polynomial_checked": false,
+      "exact_deletion_central_identity": true,
+      "exact_trace_moments_checked": 3,
+      "modular_kernel_dimensions": {
+        "1000003": 47,
+        "1000033": 47
+      },
+      "predicted_integer_spectrum": {
+        "0": 47,
+        "12": 1,
+        "2": 9,
+        "3": 20,
+        "5": 18,
+        "6": 15,
+        "9": 10
+      },
+      "r": 3,
+      "rank_bound_fraction": "1/4",
+      "top_kernel_dimension": 47,
+      "top_kernel_fraction": "47/120",
+      "tuple_dimension": 120
+    },
+    {
+      "N": 7,
+      "Pieri_dimension_sum": 210,
+      "exact_characteristic_polynomial_checked": false,
+      "exact_deletion_central_identity": true,
+      "exact_trace_moments_checked": 3,
+      "modular_kernel_dimensions": {
+        "1000003": 104,
+        "1000033": 104
+      },
+      "predicted_integer_spectrum": {
+        "0": 104,
+        "11": 12,
+        "15": 1,
+        "3": 14,
+        "4": 30,
+        "6": 28,
+        "7": 15,
+        "8": 6
+      },
+      "r": 3,
+      "rank_bound_fraction": "2/5",
+      "top_kernel_dimension": 104,
+      "top_kernel_fraction": "52/105",
+      "tuple_dimension": 210
+    },
+    {
+      "N": 8,
+      "Pieri_dimension_sum": 336,
+      "exact_characteristic_polynomial_checked": false,
+      "exact_deletion_central_identity": true,
+      "exact_trace_moments_checked": 3,
+      "modular_kernel_dimensions": {
+        "1000003": 191,
+        "1000033": 191
+      },
+      "predicted_integer_spectrum": {
+        "0": 191,
+        "10": 7,
+        "13": 14,
+        "18": 1,
+        "4": 20,
+        "5": 42,
+        "7": 40,
+        "8": 21
+      },
+      "r": 3,
+      "rank_bound_fraction": "1/2",
+      "top_kernel_dimension": 191,
+      "top_kernel_fraction": "191/336",
+      "tuple_dimension": 336
+    }
+  ]
+}
