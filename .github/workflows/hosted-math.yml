@@ -48,6 +48,7 @@ jobs:
           node verification/hosted_math/capture_hosted_math.cjs \
             --root "$GITHUB_WORKSPACE" --repository "$GITHUB_REPOSITORY" \
             --revision "$CAPTURE_REVISION" \
+            --contract verification/hosted_math/text-contract.json \
             --output "$RUNNER_TEMP/math-captures/final"
       - name: Retain actual captures and comparison reports
         if: always()

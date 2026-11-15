@@ -21,7 +21,7 @@ G_k(f,g)=\langle a_f|a_g\rangle^k
 =\left(\frac{A(f,g)}N\right)^k.
 ```
 
-The matrix $`G_k/L`$ is positive semidefinite with trace one. The target Gram matrix is $`H(f,g)=\langle s_f|s_g\rangle=B(f,g)/N`$, where $`B(f,g)=|\operatorname{im}f\cap\operatorname{im}g|`$; it is used on the [output side](output_harmonics.md).
+The matrix $`G_k/L`$ is positive semidefinite with trace one. The target Gram matrix is $`H(f,g)=\langle s_f|s_g\rangle=B(f,g)/N`$, where $`B(f,g)=|\mathrm{im}f\cap\mathrm{im}g|`$; it is used on the [output side](output_harmonics.md).
 
 ## The projector and the statement
 
@@ -57,7 +57,7 @@ with only valid partitions included. This is the equal-tail convention of [LR22,
 
 ```math
 \boxed{
-\operatorname{Tr}\!\left(\Pi_k\frac{G_k}{L}\right)
+\mathrm{Tr}\!\left(\Pi_k\frac{G_k}{L}\right)
 \ge 1-\frac{k}{N-k+1}.
 }
 ```
@@ -102,7 +102,7 @@ Thus this is a convex identity of Gram matrices. It does not assume that the pro
 Let $`V_r(N)`$ be the space with orthonormal basis the ordered distinct $`r`$-tuples from $`[N]`$. Since $`f`$ is injective, the output tuples in $`|\Phi_f^{(r)}\rangle`$ are orthogonal. Its reduced domain state is therefore exactly
 
 ```math
-\operatorname{Tr}_Y
+\mathrm{Tr}_Y
 |\Phi_f^{(r)}\rangle\langle\Phi_f^{(r)}|
 =\frac{I_{V_r(N)}}{(N)_r}.
 ```
@@ -130,8 +130,8 @@ The rank inequality immediately gives
 
 ```math
 \begin{aligned}
-\operatorname{codim}\mathscr H_r(N)
-&\le\sum_{j=1}^r\operatorname{rank}D_j\\
+\mathrm{codim}\mathscr H_r(N)
+&\le\sum_{j=1}^r\mathrm{rank}D_j\\
 &\le r(N)_{r-1},
 \end{aligned}
 ```
@@ -228,10 +228,10 @@ Because $`\mathcal D_r=\sum_jD_j^\dagger D_j`$, its kernel is exactly $`\mathscr
 The reduced-state formula now yields
 
 ```math
-\left\|
+\left\Vert
 (P_{\mathscr H_r(N)}\otimes I)
 |\Phi_f^{(r)}\rangle
-\right\|^2
+\right\Vert^2
 =\frac{\dim\mathscr H_r(N)}{(N)_r}
 \ge1-\frac{r}{N-r+1}.
 ```
@@ -277,9 +277,9 @@ It is an intertwiner: domain permutations act on the physical index tuple, and r
 Let $`E`$ be an isotypic projector on the function-label space, and let $`P`$ be the projector onto the matching joint isotypic component of the physical space, including all physical multiplicities. Intertwining gives $`PT_r=T_rE`$. Since $`T_r^\dagger T_r=J_r`$,
 
 ```math
-\operatorname{Tr}\!\left(E\frac{J_r}{L}\right)
+\mathrm{Tr}\!\left(E\frac{J_r}{L}\right)
 =
-\operatorname{Tr}\!\left(P\frac{T_rT_r^\dagger}{L}\right).
+\mathrm{Tr}\!\left(P\frac{T_rT_r^\dagger}{L}\right).
 ```
 
 The right side is the average physical probability of the corresponding component. Thus the reduced-domain dimension bound transfers to the normalized Gram weight exactly, including any multiplicities in the physical representation.
@@ -287,7 +287,7 @@ The right side is the average physical probability of the corresponding componen
 Since the top-degree part lies in $`\Pi_r`$,
 
 ```math
-\operatorname{Tr}\!\left(\Pi_r\frac{J_r}{L}\right)
+\mathrm{Tr}\!\left(\Pi_r\frac{J_r}{L}\right)
 \ge1-\frac{r}{N-r+1}.
 ```
 
@@ -297,9 +297,9 @@ For $`r\le k`$, the projector $`\Pi_k`$ includes $`\Pi_r`$. Positivity, the conv
 
 ```math
 \begin{aligned}
-\operatorname{Tr}\!\left(\Pi_k\frac{G_k}{L}\right)
+\mathrm{Tr}\!\left(\Pi_k\frac{G_k}{L}\right)
 &=\sum_{r=1}^k
-w_r\operatorname{Tr}\!\left(\Pi_k\frac{J_r}{L}\right)\\
+w_r\mathrm{Tr}\!\left(\Pi_k\frac{J_r}{L}\right)\\
 &\ge\sum_{r=1}^k
 w_r\left(1-\frac{r}{N-r+1}\right)\\
 &\ge1-\frac{k}{N-k+1}.

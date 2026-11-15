@@ -9,7 +9,7 @@ The argument uses the injection-space decomposition of Lindzey and Rosmanis [LR2
 Use the [model](model.md): $`\mathcal F`$ is the set of injections $`f:[N]\to[M]`$, and $`L=|\mathcal F|=(M)_N`$. For $`f,g\in\mathcal F`$, put
 
 ```math
-B(f,g)=|\operatorname{im}f\cap\operatorname{im}g|,
+B(f,g)=|\mathrm{im}f\cap\mathrm{im}g|,
 \qquad
 H_{f,g}=\langle s_f|s_g\rangle=\frac{B(f,g)}N.
 ```
@@ -33,7 +33,7 @@ including only valid partitions. A garbage Gram matrix means any positive semide
 **Output harmonic bound.** If $`N\ge64`$, $`M\ge N^4`$, and $`1\le K\le N/32`$, then every garbage Gram matrix satisfies
 
 ```math
-\operatorname{Tr}\!\left[\Pi_K\frac{H\circ T}{L}\right]
+\mathrm{Tr}\!\left[\Pi_K\frac{H\circ T}{L}\right]
 \le \frac NM+\frac{3K+2}{N}+4N^{-4}.
 \tag{1}
 ```
@@ -94,12 +94,12 @@ Fix $`\lambda=(N-\ell,\nu)`$ with $`\ell\le K`$ and an admissible $`\mu\ne\bar\l
 
 ```math
 \begin{aligned}
-&\operatorname{Tr}\!\left[
+&\mathrm{Tr}\!\left[
 E_{\lambda,\bar\lambda}
 \frac{T_{\lambda,\mu}\circ Q}{L}\right]\\
 &\qquad=
 \frac{d_{\bar\lambda}}{d_\mu}
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
 E_{\lambda,\mu}
 \frac{T_{\lambda,\bar\lambda}\circ Q}{L}\right]
 \le\frac{d_{\bar\lambda}}{d_\mu}.
@@ -152,7 +152,7 @@ This finite bound replaces a fixed-rank asymptotic estimate.
 
 ## Minimal garbage blocks: a weighted overlap tail
 
-Now let $`E=E_{\lambda,\bar\lambda}`$ and $`d=\operatorname{rank}E`$. Transitivity makes every diagonal entry $`d/L`$. Define the real spherical function
+Now let $`E=E_{\lambda,\bar\lambda}`$ and $`d=\mathrm{rank}E`$. Transitivity makes every diagonal entry $`d/L`$. Define the real spherical function
 
 ```math
 \omega(f,g)=\frac Ld E_{f,g}.
@@ -172,16 +172,16 @@ The first follows from positive semidefiniteness of $`E`$; the second is the dia
 Fix the identity injection $`f_0(x)=x`$. Expanding the trace and using invariance gives the exact expression
 
 ```math
-\operatorname{Tr}\!\left[E\frac{T_{\lambda,\bar\lambda}\circ Q}{L}\right]
+\mathrm{Tr}\!\left[E\frac{T_{\lambda,\bar\lambda}\circ Q}{L}\right]
 =\frac dL\sum_{g\in\mathcal F}
 |\omega(f_0,g)|^2 Q_{f_0,g}.
 \tag{8}
 ```
 
-Let $`B_g=|\operatorname{im}g\cap[N]|`$. For any integer $`1\le t\le N`$, split the sum at $`B_g=t`$. On the first part, (3) bounds $`Q`$ by $`t/N`$, and the weights in (7) sum to one. On the second, use $`Q\le1`$ and $`|\omega|\le1`$. Thus
+Let $`B_g=|\mathrm{im}g\cap[N]|`$. For any integer $`1\le t\le N`$, split the sum at $`B_g=t`$. On the first part, (3) bounds $`Q`$ by $`t/N`$, and the weights in (7) sum to one. On the second, use $`Q\le1`$ and $`|\omega|\le1`$. Thus
 
 ```math
-\operatorname{Tr}\!\left[E\frac{T_{\lambda,\bar\lambda}\circ Q}{L}\right]
+\mathrm{Tr}\!\left[E\frac{T_{\lambda,\bar\lambda}\circ Q}{L}\right]
 \le\frac tN+d\,\Pr(B_g\ge t),
 \tag{9}
 ```

@@ -15,7 +15,7 @@ For an unknown injection $`f:[N]\to[M]`$, the supplied specimen and desired outp
 Injectivity means distinct addresses have distinct values. Simply discarding the address gives
 
 ```math
-\operatorname{Tr}_{X}|a_f\rangle\langle a_f|
+\mathrm{Tr}_{X}|a_f\rangle\langle a_f|
 =\frac1N\sum_x|f(x)\rangle\langle f(x)|.
 ```
 
@@ -77,7 +77,7 @@ For the target, instead,
 ```math
 H(f,g)=\langle s_f|s_g\rangle
 =\frac{B(f,g)}N,
-\qquad B(f,g)=|\operatorname{im}f\cap\operatorname{im}g|.
+\qquad B(f,g)=|\mathrm{im}f\cap\mathrm{im}g|.
 ```
 
 The source records agreement at the same addresses; the target records common values regardless of their addresses. Exact processing would therefore require $`G_k=H\circ T`$, where $`T(f,g)=\langle t_f|t_g\rangle`$ and $`\circ`$ multiplies corresponding entries. Allowing arbitrary positive semidefinite, diagonal-one $`T`$ allows arbitrary final garbage.
@@ -93,14 +93,14 @@ A sector is called minimal when its two partition labels have the same tail: $`(
 The [input argument](../science/input_harmonics.md) first separates repeated addresses from distinct-address tuples, then uses deletion maps and the injection decomposition. It proves
 
 ```math
-\operatorname{Tr}\!\left(\Pi_k\frac{G_k^{\mathsf T}}L\right)
+\mathrm{Tr}\!\left(\Pi_k\frac{G_k^{\mathsf T}}L\right)
 \ge1-\frac{k}{N-k+1}.
 ```
 
 The [output argument](../science/output_harmonics.md) bounds the same probability on a target-times-garbage state, uniformly over all allowable $`T`$:
 
 ```math
-\operatorname{Tr}\!\left(\Pi_k\frac{(H\circ T)^{\mathsf T}}L\right)
+\mathrm{Tr}\!\left(\Pi_k\frac{(H\circ T)^{\mathsf T}}L\right)
 \le\frac NM+\frac{3k+2}{N}+4N^{-4}.
 ```
 
@@ -110,7 +110,7 @@ Neither the upper algorithm nor the lower proof requires the experimenter to imp
 
 ## Turn the mismatch into a constant-error theorem
 
-The [final proof](../science/copy_lower_bound.md) handles approximation using the isometric outputs. Define mean pure-target fidelity by $`\overline F=L^{-1}\sum_f\langle s_f|\rho_f|s_f\rangle`$. Fidelity here is this target population, and half trace distance is $`D(\rho,\sigma)=\tfrac12\|\rho-\sigma\|_1`$.
+The [final proof](../science/copy_lower_bound.md) handles approximation using the isometric outputs. Define mean pure-target fidelity by $`\overline F=L^{-1}\sum_f\langle s_f|\rho_f|s_f\rangle`$. Fidelity here is this target population, and half trace distance is $`D(\rho,\sigma)=\tfrac12\Vert\rho-\sigma\Vert_1`$.
 
 Projecting each $`|\Omega_f\rangle`$ onto its target gives an auxiliary family $`|t_f\rangle`$ for which
 

@@ -100,7 +100,7 @@ Taking the partial trace over the physical registers gives, respectively,
 H(f,g)=\langle s_f|s_g\rangle.
 ```
 
-Here $`\mathsf T`$ denotes matrix transpose, not the auxiliary Gram matrix. With half trace distance $`D(\rho,\sigma)=\tfrac12\|\rho-\sigma\|_1`$, pure-state trace distance and contractivity imply
+Here $`\mathsf T`$ denotes matrix transpose, not the auxiliary Gram matrix. With half trace distance $`D(\rho,\sigma)=\tfrac12\Vert\rho-\sigma\Vert_1`$, pure-state trace distance and contractivity imply
 
 ```math
 D(\sigma,\tau)
@@ -118,7 +118,7 @@ Suppose, for contradiction, that $`1\le k\le N/32`$. Let $`\Pi_k`$ be the equal-
 The source lemma gives
 
 ```math
-\operatorname{Tr}(\Pi_k\sigma)
+\mathrm{Tr}(\Pi_k\sigma)
 \ge1-\frac{k}{N-k+1}
 >\frac{30}{31}.
 \tag{3}
@@ -128,7 +128,7 @@ The output lemma applies to the arbitrary Gram matrix $`T`$ and gives
 
 ```math
 \begin{aligned}
-\operatorname{Tr}(\Pi_k\tau)
+\mathrm{Tr}(\Pi_k\tau)
 &\le\frac NM+\frac{3k+2}{N}+4N^{-4}\\
 &\le N^{-3}+\frac3{32}+\frac2N+4N^{-4}
 <0.126.
